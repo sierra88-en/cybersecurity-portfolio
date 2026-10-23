@@ -1,42 +1,43 @@
-# Lab: Linux User and Group Management
+# Laboratorio: gestión de usuarios y grupos en Linux
 
-- **Date:** [YYYY-MM-DD]
-- **Distribution/version:** [Distribution and release]
-- **Environment:** [Disposable VM/container]
-- **Objective:** Practice account lifecycle, group membership, and access review.
+- **Fecha:** [AAAA-MM-DD]
+- **Distribución/versión:** [Distribución y versión]
+- **Entorno:** [VM o contenedor desechable]
+- **Objetivo:** Practicar el ciclo de vida de cuentas, membresía de grupos y revisión de accesos.
 
-## Safety notes
+## Notas de seguridad
 
-Perform only in a disposable lab with console recovery. Never change or delete production accounts based on this template. Do not publish real usernames or account databases.
+Realiza este ejercicio únicamente en un laboratorio desechable con acceso de consola para recuperación. Nunca cambies ni elimines cuentas de producción siguiendo esta plantilla. No publiques usuarios reales ni bases de cuentas del sistema.
 
-## Procedure
+## Procedimiento
 
 ```bash
-# Inspect the current identity and groups
+# Inspecciona la identidad actual y los grupos
 id
-getent group <lab-group>
+getent group <grupo-lab>
 
-# Example lifecycle commands — review before use; privileged actions are commented
-# sudo useradd --create-home <lab-user>
-# sudo usermod --append --groups <lab-group> <lab-user>
-# id <lab-user>
-# sudo userdel --remove <lab-user>   # only for a disposable lab account
+# Comandos de ejemplo para el ciclo de vida; revísalos antes de usar.
+# Las acciones privilegiadas están comentadas.
+# sudo useradd --create-home <usuario-lab>
+# sudo usermod --append --groups <grupo-lab> <usuario-lab>
+# id <usuario-lab>
+# sudo userdel --remove <usuario-lab>   # solo para una cuenta desechable del laboratorio
 ```
 
-## Results
+## Resultados
 
-- **Expected:** [Expected account/group state]
-- **Observed:** [Sanitized result]
-- **Access review:** [Explain how least privilege was assessed]
+- **Esperado:** [Estado esperado de la cuenta y los grupos]
+- **Observado:** [Resultado sanitizado]
+- **Revisión de accesos:** [Explica cómo se evaluó el mínimo privilegio]
 
 ```text
-[Sanitized command output]
+[Salida sanitizada de comandos]
 ```
 
-## Screenshots
+## Capturas
 
-![Sanitized user-management result](../../assets/screenshots/REPLACE-WITH-SANITIZED-IMAGE.png)
+![Resultado sanitizado de gestión de usuarios](../../assets/screenshots/REEMPLAZAR-POR-IMAGEN-SANITIZADA.png)
 
-## Lessons learned and cleanup
+## Lecciones aprendidas y limpieza
 
-[Account lifecycle considerations, verification, and cleanup confirmation.]
+[Consideraciones del ciclo de vida de cuentas, verificación y confirmación de limpieza.]

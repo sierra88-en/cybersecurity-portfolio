@@ -1,43 +1,43 @@
-# Lab: Linux File Permissions and Ownership
+# Laboratorio: permisos y propiedad de archivos en Linux
 
-- **Date:** [YYYY-MM-DD]
-- **Distribution/version:** [e.g., Ubuntu 24.04 LTS]
-- **Environment:** [Disposable VM/container; no production systems]
-- **Objective:** Understand ownership, mode bits, least privilege, and verification.
+- **Fecha:** [AAAA-MM-DD]
+- **Distribución/versión:** [Por ejemplo, Ubuntu 24.04 LTS]
+- **Entorno:** [VM o contenedor desechable; sin sistemas de producción]
+- **Objetivo:** Comprender propiedad, bits de permisos, mínimo privilegio y verificación.
 
-## Concepts
+## Conceptos
 
-[Explain user/group/other permissions, symbolic and octal notation, directory traversal, and why least privilege matters.]
+[Explica permisos de usuario/grupo/otros, notación simbólica y octal, acceso a directorios y la importancia del mínimo privilegio.]
 
-## Procedure
+## Procedimiento
 
-Use a disposable lab. Review every command before execution; privileged commands can alter system access.
+Usa un laboratorio desechable. Revisa cada comando antes de ejecutarlo; los comandos privilegiados pueden alterar el acceso al sistema.
 
 ```bash
-# Inspect identity and a lab file (replace placeholders)
+# Inspecciona la identidad y un archivo del laboratorio (reemplaza los marcadores)
 id
 ls -l -- ./sample.txt
 stat -- ./sample.txt
 
-# Example only: set owner/group and restrictive permissions on a lab file
-# sudo chown <lab-user>:<lab-group> ./sample.txt
+# Solo como ejemplo: asigna propietario/grupo y permisos restrictivos a un archivo del laboratorio
+# sudo chown <usuario-lab>:<grupo-lab> ./sample.txt
 # chmod 640 ./sample.txt
 ```
 
-## Verification and results
+## Verificación y resultados
 
-- **Expected:** [Describe intended owner and access]
-- **Observed:** [Record sanitized output]
-- **Verification command:** `stat -- ./sample.txt`
+- **Esperado:** [Describe propietario y acceso previstos]
+- **Observado:** [Registra resultados sanitizados]
+- **Comando de verificación:** `stat -- ./sample.txt`
 
 ```text
-[Paste sanitized output; do not include usernames or paths that identify a real system.]
+[Agrega una salida sanitizada; no incluyas usuarios ni rutas que identifiquen un sistema real.]
 ```
 
-## Screenshots
+## Capturas
 
-![Sanitized permissions lab result](../../assets/screenshots/REPLACE-WITH-SANITIZED-IMAGE.png)
+![Resultado sanitizado del laboratorio de permisos](../../assets/screenshots/REEMPLAZAR-POR-IMAGEN-SANITIZADA.png)
 
-## Lessons learned and cleanup
+## Lecciones aprendidas y limpieza
 
-[What changed, what could go wrong, safe rollback, and cleanup performed.]
+[Qué cambió, qué podría salir mal, cómo revertirlo de forma segura y qué limpieza se realizó.]

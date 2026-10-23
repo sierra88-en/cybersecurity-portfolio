@@ -1,5 +1,5 @@
-# Incident Response
+# Respuesta a incidentes
 
-Templates for structured, privacy-conscious incident documentation. Adapt to the organization's approved incident response plan and applicable legal, regulatory, and evidence-handling requirements. Do not use this public repository to store real incident records.
+Plantillas para documentar incidentes de forma estructurada y con cuidado de la privacidad. Adáptalas al plan de respuesta a incidentes aprobado por la organización y a los requisitos legales, regulatorios y de manejo de evidencia aplicables. No uses este repositorio público para almacenar registros reales de incidentes.
 
-- [Incident record template](TEMPLATE.md)
+- [Plantilla de registro de incidente](TEMPLATE.md)

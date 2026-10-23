@@ -1,22 +1,22 @@
-# Contribution and documentation standards
+# Estándares para contribuir y documentar
 
-This repository is a public portfolio. Keep examples safe, reproducible, and free of confidential material.
+Este repositorio es un portafolio público. Mantén los ejemplos seguros, reproducibles y libres de información confidencial.
 
-## Before submitting changes
+## Antes de proponer cambios
 
-1. Confirm authorization for any system discussed.
-2. Use synthetic or sanitized data and screenshots.
-3. Include purpose, environment, prerequisites, procedure, verification, limitations, and cleanup.
-4. Prefer defensive explanation and remediation over exploit instructions.
-5. Run a secret scan and review the complete diff before pushing.
-6. Update links and the project index when adding a project.
+1. Confirma que tienes autorización para cualquier sistema mencionado.
+2. Usa datos sintéticos o sanitizados, incluidas las capturas.
+3. Incluye objetivo, entorno, requisitos previos, procedimiento, verificación, limitaciones y limpieza.
+4. Prioriza explicaciones defensivas y mitigaciones en lugar de instrucciones de explotación.
+5. Ejecuta un análisis de secretos y revisa el diff completo antes de publicar.
+6. Actualiza los enlaces y el índice de proyectos cuando agregues un proyecto.
 
-## Suggested commit format
+## Formato sugerido para commits
 
 ```text
-category: concise description
+categoría: descripción breve
 
-Examples: docs: add Linux permissions lab
-          fix: correct SQL parameter example
-          chore: update project index
+Ejemplos: docs: agregar laboratorio de permisos de Linux
+          fix: corregir ejemplo de parámetros SQL
+          chore: actualizar índice de proyectos
 ```

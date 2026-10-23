@@ -1,89 +1,89 @@
-# Security Assessment Report: [System or Lab Name]
+# Informe de evaluación de seguridad: [Nombre del sistema o laboratorio]
 
-> **Classification:** Public portfolio copy — sanitized  
-> **Assessment date:** [YYYY-MM-DD]  
-> **Author:** [Name / handle]  
-> **Status:** [Draft | Reviewed | Complete]
+> **Clasificación:** Copia pública para portafolio — sanitizada  
+> **Fecha de evaluación:** [AAAA-MM-DD]  
+> **Autor/a:** [Nombre / alias]  
+> **Estado:** [Borrador | Revisado | Completo]
 
-## Executive summary
+## Resumen ejecutivo
 
-[Explain the objective, overall posture, principal risks, and most important recommended actions in concise, non-sensitive language.]
+[Explica brevemente el objetivo, la postura general, los riesgos principales y las acciones recomendadas más importantes, sin incluir información sensible.]
 
-## Authorization and scope
+## Autorización y alcance
 
-- **Authorization reference:** [Description or redacted reference]
-- **In-scope assets:** [Lab assets or approved systems; sanitize identifying details]
-- **Out of scope:** [Explicit exclusions]
-- **Assessment window:** [Start/end, timezone]
-- **Constraints:** [Rate limits, prohibited techniques, availability constraints]
+- **Referencia de autorización:** [Descripción o referencia redactada]
+- **Activos dentro del alcance:** [Activos de laboratorio o sistemas aprobados; sanitiza identificadores]
+- **Fuera del alcance:** [Exclusiones explícitas]
+- **Ventana de evaluación:** [Inicio/fin, zona horaria]
+- **Restricciones:** [Límites de frecuencia, técnicas prohibidas, restricciones de disponibilidad]
 
-## Environment and methodology
+## Entorno y metodología
 
-- **Environment:** [OS, architecture, deployment type]
-- **Tools and versions:** [Tool — version]
-- **Methodology:** [Standards or process used]
-- **Data handling:** [Synthetic/anonymized; retention and cleanup]
+- **Entorno:** [SO, arquitectura, tipo de despliegue]
+- **Herramientas y versiones:** [Herramienta — versión]
+- **Metodología:** [Estándares o proceso utilizado]
+- **Manejo de datos:** [Sintéticos/anonimizados; retención y limpieza]
 
-## Results overview
+## Resumen de resultados
 
-| Severity | Count | Summary |
+| Severidad | Cantidad | Resumen |
 |---|---:|---|
-| Critical | [0] | [Summary] |
-| High | [0] | [Summary] |
-| Medium | [0] | [Summary] |
-| Low / Informational | [0] | [Summary] |
+| Crítica | [0] | [Resumen] |
+| Alta | [0] | [Resumen] |
+| Media | [0] | [Resumen] |
+| Baja / Informativa | [0] | [Resumen] |
 
-## Findings
+## Hallazgos
 
-### [FINDING-001] [Clear, concise title]
+### [HALLAZGO-001] [Título claro y conciso]
 
-- **Severity:** [Critical / High / Medium / Low / Informational]
-- **Affected component:** [Sanitized identifier]
-- **Status:** [Open / Accepted / Fixed / Retest pending]
-- **Confidence:** [High / Medium / Low]
+- **Severidad:** [Crítica / Alta / Media / Baja / Informativa]
+- **Componente afectado:** [Identificador sanitizado]
+- **Estado:** [Abierto / Aceptado / Corregido / Pendiente de nueva prueba]
+- **Confianza:** [Alta / Media / Baja]
 
-**Observation**  
-[What was observed and how it was validated. Avoid publishing sensitive values.]
+**Observación**  
+[Qué se observó y cómo se validó. No publiques valores sensibles.]
 
-**Impact**  
-[Realistic business or technical consequence.]
+**Impacto**  
+[Consecuencia técnica o de negocio realista.]
 
-**Evidence**  
-[Minimal sanitized evidence. Redact tokens, personal data, internal addresses, and identifying metadata.]
+**Evidencia**  
+[Evidencia mínima y sanitizada. Redacta tokens, datos personales, direcciones internas y metadatos identificables.]
 
 ```text
-[Paste safe, minimal evidence here. Do not include credentials or raw sensitive output.]
+[Agrega evidencia segura y mínima. No incluyas credenciales ni resultados sensibles sin procesar.]
 ```
 
-**Remediation**  
-[Specific, prioritized corrective action and secure configuration guidance.]
+**Mitigación**  
+[Acción correctiva específica, priorizada, y guía de configuración segura.]
 
-**Validation**  
-[How to confirm the fix in an authorized environment.]
+**Validación**  
+[Cómo confirmar la corrección en un entorno autorizado.]
 
-**References**  
-- [Vendor advisory / standard / documentation]
+**Referencias**  
+- [Aviso del proveedor / estándar / documentación]
 
-## Screenshots and lab results
+## Capturas y resultados del laboratorio
 
-<!-- Insert only sanitized images. Confirm no secrets, usernames, hostnames, or private data are visible. -->
+<!-- Inserta solo imágenes sanitizadas. Confirma que no muestren secretos, usuarios, hosts ni datos privados. -->
 
-![Sanitized assessment evidence](../../assets/screenshots/REPLACE-WITH-SANITIZED-IMAGE.png)
+![Evidencia sanitizada de la evaluación](../../assets/screenshots/REEMPLAZAR-POR-IMAGEN-SANITIZADA.png)
 
-## Limitations
+## Limitaciones
 
-[Time, access, test coverage, and other limitations; state what was not tested.]
+[Tiempo, accesos, cobertura de pruebas y otras limitaciones; indica qué no se evaluó.]
 
-## Remediation plan
+## Plan de mitigación
 
-| Finding | Action | Owner | Target date | Verification |
+| Hallazgo | Acción | Responsable | Fecha objetivo | Verificación |
 |---|---|---|---|---|
-| [FINDING-001] | [Action] | [Role] | [Date] | [Retest method] |
+| [HALLAZGO-001] | [Acción] | [Rol] | [Fecha] | [Método de nueva prueba] |
 
-## Cleanup and lessons learned
+## Limpieza y lecciones aprendidas
 
-[Describe cleanup performed, residual risk, and process improvements.]
+[Describe la limpieza realizada, el riesgo residual y las mejoras al proceso.]
 
-## Appendix: safe reproduction notes
+## Apéndice: notas de reproducción segura
 
-[Only provide reproducible steps for an isolated lab or authorized target. Include environment setup and teardown; omit secrets and sensitive payloads.]
+[Incluye pasos reproducibles solo para un laboratorio aislado o un objetivo autorizado. Agrega configuración y desmontaje del entorno; omite secretos e información sensible.]

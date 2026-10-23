@@ -1,15 +1,15 @@
-# Security and privacy checklist
+# Lista de verificación de seguridad y privacidad
 
-Before every commit or upload, verify all of the following:
+Antes de cada commit o publicación, confirma lo siguiente:
 
-- [ ] No passwords, API keys, access tokens, private keys, cookies, or connection strings are present.
-- [ ] No real names, email addresses, IP addresses, hostnames, customer records, or other identifying data are disclosed without explicit permission.
-- [ ] Screenshots are cropped and checked for browser tabs, usernames, terminal history, metadata, and secrets.
-- [ ] Logs, packet captures, database exports, and incident evidence are synthetic or safely sanitized; raw evidence is never committed.
-- [ ] Targets and test activities were explicitly authorized; no third-party systems are tested without written scope.
-- [ ] Findings avoid unnecessary weaponizable detail and include mitigations and validation guidance.
-- [ ] The repository history has been checked; deleting a secret from the latest file does not remove it from Git history.
+- [ ] No hay contraseñas, claves de API, tokens de acceso, claves privadas, cookies ni cadenas de conexión.
+- [ ] No se exponen nombres reales, correos, direcciones IP, nombres de host, registros de clientes ni otros datos identificables sin permiso explícito.
+- [ ] Las capturas están recortadas y revisadas para detectar pestañas del navegador, nombres de usuario, historial de terminal, metadatos y secretos.
+- [ ] Los registros, capturas de paquetes, exportaciones de bases de datos y evidencias de incidentes son sintéticos o están sanitizados de forma segura; nunca subas evidencia sin procesar.
+- [ ] Los objetivos y actividades de prueba contaban con autorización explícita; no se prueban sistemas de terceros sin alcance autorizado por escrito.
+- [ ] Los hallazgos evitan detalles explotables innecesarios e incluyen mitigaciones y pautas de validación.
+- [ ] Se revisó el historial del repositorio: eliminar un secreto del último archivo no lo elimina del historial de Git.
 
-If a secret is exposed, revoke or rotate it immediately. Do not rely on `.gitignore` to protect a file that was already tracked. For an accidental public disclosure, follow the provider's incident process and remove the data from repository history as appropriate.
+Si se expone un secreto, revócalo o rótalo de inmediato. No confíes en `.gitignore` para proteger archivos que ya están bajo seguimiento. Ante una exposición pública accidental, sigue el proceso de respuesta del proveedor y, cuando corresponda, elimina los datos del historial del repositorio.
 
-**This repository is public-facing portfolio material. Treat all committed content as permanently public.**
+**Este repositorio es material público de portafolio. Considera que todo contenido publicado será permanentemente público.**

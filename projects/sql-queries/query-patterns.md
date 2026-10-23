@@ -1,10 +1,10 @@
-# SQL Query Patterns: Safe Filtering and Analysis
+# Patrones SQL: filtros seguros y análisis
 
-- **Database/engine:** [SQLite / PostgreSQL / MySQL and version]
-- **Dataset:** Synthetic only — [describe generator/source]
-- **Objective:** Demonstrate explicit filtering, aggregation, and safe query construction.
+- **Base de datos/motor:** [SQLite / PostgreSQL / MySQL y versión]
+- **Conjunto de datos:** Solo sintético — [describe el generador o el origen]
+- **Objetivo:** Demostrar filtros explícitos, agregación y construcción segura de consultas.
 
-## Synthetic schema
+## Esquema sintético
 
 ```sql
 CREATE TABLE lab_events (
@@ -16,9 +16,9 @@ CREATE TABLE lab_events (
 );
 ```
 
-## Defensive query examples
+## Ejemplos de consultas defensivas
 
-Select only needed fields and constrain the time range:
+Selecciona solo los campos necesarios y limita el intervalo de tiempo:
 
 ```sql
 SELECT event_id, event_type, severity, created_at
@@ -30,7 +30,7 @@ ORDER BY created_at DESC
 LIMIT :row_limit;
 ```
 
-Summarize event counts by severity:
+Resume la cantidad de eventos por severidad:
 
 ```sql
 SELECT severity, COUNT(*) AS event_count
@@ -41,30 +41,30 @@ GROUP BY severity
 ORDER BY event_count DESC;
 ```
 
-> Bind values with the database driver's parameterized-query API. Placeholder syntax varies by driver; never construct SQL by concatenating untrusted input.
+> Vincula los valores usando la API de consultas parametrizadas del controlador de base de datos. La sintaxis de marcadores varía según el controlador; nunca construyas SQL concatenando entradas no confiables.
 
-## Security notes
+## Notas de seguridad
 
-- Use a read-only, least-privilege account for analysis where possible.
-- Avoid `SELECT *` when only a subset of columns is needed.
-- Validate and bind user-supplied values; allowlist identifiers that cannot be bound.
-- Apply row limits and time bounds to reduce accidental over-collection.
-- Do not log credentials or query results containing sensitive values.
+- Cuando sea posible, usa una cuenta de solo lectura y con mínimo privilegio para el análisis.
+- Evita `SELECT *` si solo necesitas algunas columnas.
+- Valida y vincula los valores suministrados por usuarios; usa listas permitidas para identificadores que no puedan parametrizarse.
+- Aplica límites de filas y tiempo para reducir la recopilación accidental de datos.
+- No registres credenciales ni resultados de consulta que contengan valores sensibles.
 
-## Results
+## Resultados
 
-- **Expected:** [Expected rows/aggregates]
-- **Observed:** [Synthetic result]
-- **Validation:** [How results were checked]
+- **Esperado:** [Filas o agregaciones previstas]
+- **Observado:** [Resultado sintético]
+- **Validación:** [Cómo se verificaron los resultados]
 
 ```text
-[Paste synthetic, non-sensitive output]
+[Agrega una salida sintética y no sensible]
 ```
 
-## Screenshots
+## Capturas
 
-![Sanitized SQL lab result](../../assets/screenshots/REPLACE-WITH-SANITIZED-IMAGE.png)
+![Resultado sanitizado del laboratorio SQL](../../assets/screenshots/REEMPLAZAR-POR-IMAGEN-SANITIZADA.png)
 
-## Lessons learned
+## Lecciones aprendidas
 
-[Explain query plan, edge cases, access controls, and limitations.]
+[Explica el plan de consulta, casos límite, controles de acceso y limitaciones.]

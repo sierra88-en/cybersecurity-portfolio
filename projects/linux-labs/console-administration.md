@@ -1,42 +1,42 @@
-# Lab: Linux Console Administration and Baseline Hardening
+# Laboratorio: administración por consola y línea base de Linux
 
-- **Date:** [YYYY-MM-DD]
-- **Distribution/version:** [Distribution and release]
-- **Environment:** [Isolated VM; snapshot available]
-- **Objective:** Inspect services, updates, logs, and basic host security posture.
+- **Fecha:** [AAAA-MM-DD]
+- **Distribución/versión:** [Distribución y versión]
+- **Entorno:** [VM aislada; con snapshot disponible]
+- **Objetivo:** Revisar servicios, actualizaciones, registros y la postura básica de seguridad del host.
 
-## Checks performed
+## Verificaciones realizadas
 
 ```bash
-# Read-only inspection examples
+# Ejemplos de inspección de solo lectura
 uname -a
 systemctl --failed
 ss -tulpen
 journalctl --since "24 hours ago" --no-pager | tail -n 100
 ```
 
-[Document package update status, service exposure, log review, time synchronization, firewall posture, and SSH configuration review as relevant. Redact sensitive output.]
+[Documenta el estado de actualizaciones, servicios expuestos, revisión de registros, sincronización de hora, firewall y revisión de configuración SSH, según corresponda. Sanitiza los resultados sensibles.]
 
-## Changes made
+## Cambios realizados
 
-| Change | Rationale | Risk / rollback | Verification |
+| Cambio | Justificación | Riesgo / reversión | Verificación |
 |---|---|---|---|
-| [Change] | [Why] | [Rollback] | [How verified] |
+| [Cambio] | [Motivo] | [Reversión] | [Cómo se verificó] |
 
-## Results
+## Resultados
 
-- **Baseline:** [Summary]
-- **Changes:** [Summary]
-- **Verification:** [Commands and expected outcome]
+- **Línea base:** [Resumen]
+- **Cambios:** [Resumen]
+- **Verificación:** [Comandos y resultado esperado]
 
 ```text
-[Sanitized output only]
+[Únicamente salida sanitizada]
 ```
 
-## Screenshots
+## Capturas
 
-![Sanitized console lab result](../../assets/screenshots/REPLACE-WITH-SANITIZED-IMAGE.png)
+![Resultado sanitizado del laboratorio de consola](../../assets/screenshots/REEMPLAZAR-POR-IMAGEN-SANITIZADA.png)
 
-## Lessons learned and cleanup
+## Lecciones aprendidas y limpieza
 
-[Document service impact, reboot/recovery considerations, and lab reset.]
+[Documenta el impacto en servicios, consideraciones de reinicio/recuperación y restablecimiento del laboratorio.]

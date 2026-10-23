@@ -1,69 +1,69 @@
-# Cybersecurity Portfolio
+# Portafolio de ciberseguridad
 
-**Security engineering | Linux administration | Vulnerability assessment | Incident response**
+**Ingeniería de seguridad | Administración de Linux | Evaluación de vulnerabilidades | Respuesta a incidentes**
 
-Welcome. This portfolio documents hands-on security work, repeatable lab exercises, technical investigations, and defensive engineering practices. Each project is written to make scope, methodology, evidence, findings, and remediation clear and reproducible.
+Bienvenido/a. Este portafolio documenta proyectos prácticos de seguridad, ejercicios de laboratorio reproducibles, investigaciones técnicas y prácticas de ingeniería defensiva. Cada proyecto presenta claramente el alcance, la metodología, la evidencia, los hallazgos y las medidas de mitigación.
 
-> **Responsible-use notice:** All assessments and demonstrations are performed only in systems I own or have explicit written authorization to test. Examples are sanitized and use synthetic data.
+> **Uso responsable:** Todas las evaluaciones y demostraciones se realizan únicamente en sistemas de mi propiedad o para los que tengo autorización explícita por escrito. Los ejemplos están sanitizados y usan datos sintéticos.
 
-## Profile
+## Perfil
 
-I am a security-focused technologist building practical skills across system hardening, security auditing, incident handling, and data analysis. I value clear documentation, least privilege, reproducibility, and translating technical findings into actionable risk reduction.
+Soy una persona enfocada en seguridad que desarrolla habilidades prácticas en fortalecimiento de sistemas, auditorías de seguridad, atención de incidentes y análisis de datos. Valoro la documentación clara, el mínimo privilegio, la reproducibilidad y convertir los hallazgos técnicos en acciones concretas para reducir riesgos.
 
-**Currently focused on:** `[Add your current learning or career focus]`  
-**Location / time zone:** `[City, Region]`  
-**Contact:** `[Professional email]` · `[LinkedIn]` · `[GitHub profile]`
+**Enfoque actual:** `[Agrega aquí tu enfoque de aprendizaje o carrera]`  
+**Ubicación / zona horaria:** `[Ciudad, región]`  
+**Contacto:** `[Correo profesional]` · `[LinkedIn]` · `[Perfil de GitHub]`
 
-## Core skills
+## Habilidades principales
 
-- **Operating systems:** Linux CLI, permissions and ownership, users/groups, services, logs, shell fundamentals
-- **Security:** vulnerability assessment methodology, secure configuration review, risk prioritization, evidence handling, remediation validation
-- **Incident response:** triage, timelines, containment planning, incident documentation, lessons learned
-- **Data:** SQL filtering and aggregation, data minimization, safe handling of synthetic datasets
-- **Engineering workflow:** Git, Markdown, change tracking, reproducible labs, clear technical communication
+- **Sistemas operativos:** CLI de Linux, permisos y propiedad de archivos, usuarios y grupos, servicios, registros y fundamentos de shell
+- **Seguridad:** metodología de evaluación de vulnerabilidades, revisión de configuraciones seguras, priorización de riesgos, manejo de evidencia y validación de correcciones
+- **Respuesta a incidentes:** clasificación inicial, líneas de tiempo, planificación de contención, documentación y lecciones aprendidas
+- **Datos:** filtros y agregaciones SQL, manejo seguro de datos sintéticos y minimización de datos
+- **Flujo de trabajo de ingeniería:** Git, Markdown, control de cambios, laboratorios reproducibles y comunicación técnica clara
 
-## Tools and technologies
+## Herramientas y tecnologías
 
-| Area | Tools / technologies |
+| Área | Herramientas / tecnologías |
 |---|---|
-| Systems | Linux, Bash, systemd, SSH |
-| Version control | Git, GitHub |
-| Assessment | `[Add tools actually used, e.g. Nmap, OpenVAS, OWASP ZAP]` |
-| Data | SQL, SQLite / PostgreSQL `[edit as applicable]` |
-| Documentation | Markdown, diagrams, sanitized screenshots |
+| Sistemas | Linux, Bash, systemd, SSH |
+| Control de versiones | Git, GitHub |
+| Evaluación | `[Agrega herramientas que realmente uses, por ejemplo Nmap, OpenVAS, OWASP ZAP]` |
+| Datos | SQL, SQLite / PostgreSQL `[ajusta según corresponda]` |
+| Documentación | Markdown, diagramas, capturas sanitizadas |
 
-*Only list tools you can confidently discuss in an interview. Add versions and environment details to individual project write-ups.*
+*Incluye únicamente herramientas que puedas explicar con confianza en una entrevista. Agrega versiones y detalles del entorno en cada proyecto.*
 
-## Featured work
+## Proyectos destacados
 
-| Project | Focus | Status |
+| Proyecto | Enfoque | Estado |
 |---|---|---|
-| [Security audits](projects/security-audits/README.md) | Scope-driven vulnerability assessment reports and remediation tracking | In progress |
-| [Linux labs](projects/linux-labs/README.md) | Permissions, account administration, and console operations | In progress |
-| [SQL security](projects/sql-queries/README.md) | Safe query patterns, filtering, and synthetic-data analysis | In progress |
-| [Incident response](projects/incident-response/README.md) | Triage notes, timelines, and post-incident review | In progress |
+| [Auditorías de seguridad](projects/security-audits/README.md) | Evaluaciones de vulnerabilidades con alcance definido, informes y seguimiento de mitigaciones | En progreso |
+| [Laboratorios de Linux](projects/linux-labs/README.md) | Permisos, administración de cuentas y operaciones de consola | En progreso |
+| [Seguridad en SQL](projects/sql-queries/README.md) | Consultas seguras, filtros y análisis con datos sintéticos | En progreso |
+| [Respuesta a incidentes](projects/incident-response/README.md) | Notas de clasificación, líneas de tiempo y revisión posterior al incidente | En progreso |
 
-## How to navigate
+## Navegación
 
-- `projects/security-audits/` — assessment methodology, report template, and sanitized reports
-- `projects/linux-labs/` — practical Linux administration and hardening exercises
-- `projects/sql-queries/` — defensive SQL examples using synthetic data
-- `projects/incident-response/` — incident record, evidence log, and lessons-learned template
-- `assets/screenshots/` — reviewed, sanitized images only
+- `projects/security-audits/` — metodología de evaluación, plantilla de informe e informes sanitizados
+- `projects/linux-labs/` — ejercicios prácticos de administración y fortalecimiento de Linux
+- `projects/sql-queries/` — ejemplos de SQL defensivo con datos sintéticos
+- `projects/incident-response/` — registro de incidentes, bitácora de evidencia y plantilla de lecciones aprendidas
+- `assets/screenshots/` — únicamente imágenes revisadas y sanitizadas
 
-## Working principles
+## Principios de trabajo
 
-1. Get authorization and define scope before testing.
-2. Use isolated labs and synthetic or properly anonymized data.
-3. Prefer least privilege and secure defaults.
-4. Record evidence without collecting unnecessary sensitive information.
-5. Pair every finding with a practical, testable remediation.
-6. Review every commit for secrets, personal data, and identifying details.
+1. Obtener autorización y definir el alcance antes de realizar pruebas.
+2. Usar laboratorios aislados y datos sintéticos o debidamente anonimizados.
+3. Aplicar el mínimo privilegio y configuraciones seguras por defecto.
+4. Registrar evidencia sin recopilar información sensible innecesaria.
+5. Acompañar cada hallazgo con una mitigación práctica y verificable.
+6. Revisar cada commit para detectar secretos, datos personales y detalles identificables.
 
-## Reproducibility
+## Reproducibilidad
 
-Project pages should include the operating system, tool versions, test data source, commands or query logic, expected result, observed result, and cleanup steps. Do not publish exploitable details about third-party systems.
+Cada proyecto debe incluir el sistema operativo, versiones de herramientas, origen de los datos de prueba, comandos o lógica de consulta, resultado esperado y observado, y pasos de limpieza. No publiques detalles que permitan explotar sistemas de terceros.
 
-## License and reuse
+## Licencia y reutilización
 
-Documentation is provided for educational and portfolio purposes. Unless stated otherwise in a project, code snippets are MIT licensed; see [LICENSE](LICENSE). Third-party trademarks and tools belong to their respective owners.
+La documentación se ofrece con fines educativos y de portafolio. Salvo que un proyecto indique lo contrario, los fragmentos de código están bajo la licencia MIT; consulta [LICENSE](LICENSE). Las marcas y herramientas de terceros pertenecen a sus respectivos propietarios.

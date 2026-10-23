@@ -1,90 +1,90 @@
-# Incident Record: [Sanitized Case ID]
+# Registro de incidente: [ID de caso sanitizado]
 
-> **Portfolio copy:** Synthetic or fully sanitized; no real incident details.  
-> **Classification:** Public training template  
-> **Incident lead:** [Role/alias]  
-> **Opened / updated:** [UTC timestamps]
+> **Copia para portafolio:** Sintética o completamente sanitizada; sin detalles de incidentes reales.  
+> **Clasificación:** Plantilla pública de capacitación  
+> **Líder del incidente:** [Rol/alias]  
+> **Apertura / actualización:** [Marcas de tiempo UTC]
 
-## 1. Summary
+## 1. Resumen
 
-[What happened, what is potentially affected, current status, and business impact. Use cautious language until facts are verified.]
+[Qué ocurrió, qué podría estar afectado, estado actual e impacto al negocio. Usa lenguaje prudente hasta verificar los hechos.]
 
-## 2. Scope and authorization
+## 2. Alcance y autorización
 
-- **Environment:** [Synthetic lab / authorized environment]
-- **Systems in scope:** [Sanitized identifiers]
-- **Systems excluded:** [List]
-- **Authority / escalation path:** [Role or redacted reference]
+- **Entorno:** [Laboratorio sintético / entorno autorizado]
+- **Sistemas dentro del alcance:** [Identificadores sanitizados]
+- **Sistemas excluidos:** [Lista]
+- **Autoridad / ruta de escalamiento:** [Rol o referencia redactada]
 
-## 3. Severity and status
+## 3. Severidad y estado
 
-- **Severity:** [Informational / Low / Medium / High / Critical]
-- **Status:** [New / Triage / Contained / Eradication / Recovery / Closed]
-- **Confidence:** [Low / Medium / High]
-- **Impact rationale:** [Availability, integrity, confidentiality, safety, or business impact]
+- **Severidad:** [Informativa / Baja / Media / Alta / Crítica]
+- **Estado:** [Nuevo / Clasificación / Contenido / Erradicación / Recuperación / Cerrado]
+- **Confianza:** [Baja / Media / Alta]
+- **Justificación del impacto:** [Impacto a disponibilidad, integridad, confidencialidad, seguridad física o negocio]
 
-## 4. Timeline (UTC)
+## 4. Línea de tiempo (UTC)
 
-| Timestamp (UTC) | Event / action | Source | Confidence |
+| Marca de tiempo (UTC) | Evento / acción | Fuente | Confianza |
 |---|---|---|---|
-| [YYYY-MM-DD HH:MM] | [Sanitized observation or action] | [Log/source] | [Level] |
+| [AAAA-MM-DD HH:MM] | [Observación o acción sanitizada] | [Registro/fuente] | [Nivel] |
 
-## 5. Indicators and evidence register
+## 5. Indicadores y registro de evidencia
 
-Record only the minimum necessary. Use synthetic indicators in this public template; preserve real evidence only in approved, access-controlled systems.
+Registra solo lo mínimo necesario. Usa indicadores sintéticos en esta plantilla pública; conserva evidencia real únicamente en sistemas aprobados y con acceso restringido.
 
-| Evidence ID | Description | Source / time | Integrity / handling | Location (restricted) |
+| ID de evidencia | Descripción | Fuente / hora | Integridad / manejo | Ubicación (restringida) |
 |---|---|---|---|---|
-| [E-001] | [Sanitized description] | [Source; UTC] | [Hash/process if applicable] | [Do not put private paths here] |
+| [E-001] | [Descripción sanitizada] | [Fuente; UTC] | [Hash/proceso, si aplica] | [No incluyas rutas privadas] |
 
-## 6. Triage and analysis
+## 6. Clasificación y análisis
 
-- **Initial report:** [Sanitized summary]
-- **Affected assets / accounts:** [Redacted or synthetic labels]
-- **Observed behavior:** [Facts separated from hypotheses]
-- **Potential scope:** [Known, suspected, and unknown]
-- **Queries / checks:** [Safe, authorized methods; redact values]
+- **Reporte inicial:** [Resumen sanitizado]
+- **Activos / cuentas afectados:** [Etiquetas redactadas o sintéticas]
+- **Comportamiento observado:** [Separa hechos de hipótesis]
+- **Alcance potencial:** [Conocido, sospechado y desconocido]
+- **Consultas / verificaciones:** [Métodos seguros y autorizados; redacta valores]
 
 ```text
-[Minimal sanitized evidence only. Never paste credentials, personal data, or raw logs.]
+[Únicamente evidencia mínima y sanitizada. Nunca pegues credenciales, datos personales ni registros sin procesar.]
 ```
 
-## 7. Containment, eradication, and recovery
+## 7. Contención, erradicación y recuperación
 
-| Action | Owner / role | Time (UTC) | Approval | Outcome / verification |
+| Acción | Responsable / rol | Hora (UTC) | Aprobación | Resultado / verificación |
 |---|---|---|---|---|
-| [Action] | [Role] | [Timestamp] | [Reference] | [Result] |
+| [Acción] | [Rol] | [Marca de tiempo] | [Referencia] | [Resultado] |
 
-[Describe trade-offs, dependencies, and rollback/recovery steps.]
+[Describe compensaciones, dependencias y pasos de reversión/recuperación.]
 
-## 8. Communications and escalation
+## 8. Comunicaciones y escalamiento
 
-[Record roles notified, time, approved channel, and next update. Do not include private contact details.]
+[Registra los roles notificados, hora, canal aprobado y próxima actualización. No incluyas datos de contacto privados.]
 
-## 9. Root cause and contributing factors
+## 9. Causa raíz y factores contribuyentes
 
-[State confirmed causes separately from hypotheses. Note control gaps without assigning blame.]
+[Separa las causas confirmadas de las hipótesis. Describe brechas de controles sin asignar culpas.]
 
-## 10. Lessons learned and action items
+## 10. Lecciones aprendidas y tareas de mejora
 
-| Action item | Priority | Owner role | Due date | Validation evidence |
+| Tarea | Prioridad | Rol responsable | Fecha límite | Evidencia de validación |
 |---|---|---|---|---|
-| [Prevent / detect / respond improvement] | [Priority] | [Role] | [Date] | [How verified] |
+| [Mejora de prevención / detección / respuesta] | [Prioridad] | [Rol] | [Fecha] | [Cómo se verificará] |
 
-## 11. Closure criteria
+## 11. Criterios de cierre
 
-- [ ] Scope assessed and documented
-- [ ] Containment and recovery verified
-- [ ] Required notifications completed through approved channels
-- [ ] Evidence handled and retained per policy
-- [ ] Follow-up actions assigned and tracked
+- [ ] Alcance evaluado y documentado
+- [ ] Contención y recuperación verificadas
+- [ ] Notificaciones requeridas completadas por canales aprobados
+- [ ] Evidencia manejada y retenida de acuerdo con la política
+- [ ] Acciones de seguimiento asignadas y registradas
 
-## 12. Sanitized lab results and screenshots
+## 12. Resultados de laboratorio y capturas sanitizadas
 
-![Sanitized incident-response lab evidence](../../assets/screenshots/REPLACE-WITH-SANITIZED-IMAGE.png)
+![Evidencia sanitizada del laboratorio de respuesta a incidentes](../../assets/screenshots/REEMPLAZAR-POR-IMAGEN-SANITIZADA.png)
 
-## 13. Review
+## 13. Revisión
 
-- **Prepared by:** [Role / date]
-- **Reviewed by:** [Role / date]
-- **Approval / closure:** [Role / date]
+- **Preparado por:** [Rol / fecha]
+- **Revisado por:** [Rol / fecha]
+- **Aprobación / cierre:** [Rol / fecha]

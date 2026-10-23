@@ -1,9 +1,9 @@
-# Linux Security Labs
+# Laboratorios de seguridad en Linux
 
-Hands-on exercises for Linux permissions, identity and access management, and console administration. Each lab should state its distribution/version, prerequisites, expected result, verification, and cleanup.
+Ejercicios prácticos sobre permisos de Linux, gestión de identidades y accesos, y administración por consola. Cada laboratorio debe indicar la distribución y versión, requisitos previos, resultado esperado, verificación y limpieza.
 
-## Labs
+## Laboratorios
 
-- [Permissions and ownership](permissions-and-ownership.md)
-- [Users and groups](user-management.md)
-- [Console administration and hardening](console-administration.md)
+- [Permisos y propiedad de archivos](permissions-and-ownership.md)
+- [Usuarios y grupos](user-management.md)
+- [Administración de consola y fortalecimiento](console-administration.md)

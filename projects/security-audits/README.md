@@ -1,10 +1,10 @@
-# Security Audits
+# Auditorías de seguridad
 
-Document authorized security reviews with a reproducible scope, risk-based findings, and verified remediation. Use the [assessment report template](TEMPLATE.md). Place completed, sanitized reports in `reports/`.
+Documenta revisiones de seguridad autorizadas con un alcance reproducible, hallazgos priorizados por riesgo y mitigaciones verificadas. Usa la [plantilla de informe de evaluación](TEMPLATE.md). Guarda los informes completos y sanitizados en `reports/`.
 
-## Rules of engagement
+## Reglas de participación
 
-- Obtain written authorization and define targets, dates, methods, and exclusions.
-- Use non-destructive checks unless explicitly approved otherwise.
-- Protect evidence; never store secrets or raw customer data in this repository.
-- Report only validated findings and disclose them through the agreed channel.
+- Obtén autorización por escrito y define objetivos, fechas, métodos y exclusiones.
+- Usa verificaciones no destructivas, salvo aprobación explícita para otros métodos.
+- Protege la evidencia; nunca guardes secretos ni datos reales de clientes en este repositorio.
+- Informa únicamente hallazgos validados y usa el canal acordado para divulgarlos.
