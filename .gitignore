@@ -1,0 +1,43 @@
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials.json
+secrets.*
+*_secret*
+*_token*
+
+# Private/customer data and evidence (never commit raw evidence)
+private/
+sensitive/
+customer-data/
+raw-evidence/
+*.pcap
+*.pcapng
+*.dump
+*.dmp
+
+# Local/editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Python / virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build / test output
+coverage/
+dist/
+build/
