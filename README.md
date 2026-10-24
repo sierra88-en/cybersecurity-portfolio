@@ -39,7 +39,7 @@ Soy una persona enfocada en seguridad que desarrolla habilidades prácticas en f
 | Proyecto | Enfoque | Estado |
 |---|---|---|
 | [Auditorías de seguridad](projects/security-audits/README.md) | Evaluaciones de vulnerabilidades con alcance definido, informes y seguimiento de mitigaciones | En progreso |
-| [Caso Botium Toys](projects/security-audits/botium-toys/README.md) | Auditoría interna ficticia: evaluación de controles, aplicabilidad de cumplimiento y mitigaciones priorizadas | Documentado |
+| [Caso Botium Toys](https://github.com/sierra88-en/botium-toys-security-audit) | Repositorio independiente: auditoría interna ficticia, matriz de controles y mitigaciones priorizadas | Documentado |
 | [Laboratorios de Linux](projects/linux-labs/README.md) | Permisos, administración de cuentas y operaciones de consola | En progreso |
 | [Seguridad en SQL](projects/sql-queries/README.md) | Consultas seguras, filtros y análisis con datos sintéticos | En progreso |
 | [Respuesta a incidentes](projects/incident-response/README.md) | Notas de clasificación, líneas de tiempo y revisión posterior al incidente | En progreso |
@@ -64,6 +64,16 @@ Soy una persona enfocada en seguridad que desarrolla habilidades prácticas en f
 ## Reproducibilidad
 
 Cada proyecto debe incluir el sistema operativo, versiones de herramientas, origen de los datos de prueba, comandos o lógica de consulta, resultado esperado y observado, y pasos de limpieza. No publiques detalles que permitan explotar sistemas de terceros.
+
+## GitHub y Markdown
+
+Este portafolio contiene un README principal y repositorios independientes para proyectos documentados. Los READMEs explican el propósito, la fuente de información, el método, los resultados y los próximos pasos; en proyectos de auditoría, la sección de evaluación describe controles y evidencia en lugar de modelos predictivos. Para crear cuenta, organizar repositorios y dar formato a la documentación, consulta estos recursos:
+
+- GitHub Docs. (2022). [Signing up for a new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account).
+- GitHub Docs. (2022). [About READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes).
+- Markdown Guide. (2022). [Basic Syntax](https://www.markdownguide.org/basic-syntax/) y [Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+- GitHub. (2022). [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+- GitHub Docs. (2022). [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ## Licencia y reutilización
 

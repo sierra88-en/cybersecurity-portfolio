@@ -5,6 +5,7 @@ Documenta revisiones de seguridad autorizadas con un alcance reproducible, halla
 ## Proyectos
 
 - [Auditoría interna de Botium Toys](botium-toys/README.md): caso académico ficticio con evaluación de alcance, recomendaciones priorizadas y lista de controles y cumplimiento.
+- [Repositorio independiente Botium Toys](https://github.com/sierra88-en/botium-toys-security-audit): README de proyecto y matriz de controles publicados por separado.
 
 ## Reglas de participación
 
