@@ -39,13 +39,14 @@ Soy una persona enfocada en seguridad que desarrolla habilidades prácticas en f
 | Proyecto | Enfoque | Estado |
 |---|---|---|
 | [Auditorías de seguridad](projects/security-audits/README.md) | Evaluaciones de vulnerabilidades con alcance definido, informes y seguimiento de mitigaciones | En progreso |
+| [Caso Botium Toys](projects/security-audits/botium-toys/README.md) | Auditoría interna ficticia: evaluación de controles, aplicabilidad de cumplimiento y mitigaciones priorizadas | Documentado |
 | [Laboratorios de Linux](projects/linux-labs/README.md) | Permisos, administración de cuentas y operaciones de consola | En progreso |
 | [Seguridad en SQL](projects/sql-queries/README.md) | Consultas seguras, filtros y análisis con datos sintéticos | En progreso |
 | [Respuesta a incidentes](projects/incident-response/README.md) | Notas de clasificación, líneas de tiempo y revisión posterior al incidente | En progreso |
 
 ## Navegación
 
-- `projects/security-audits/` — metodología de evaluación, plantilla de informe e informes sanitizados
+- `projects/security-audits/` — metodología de evaluación, plantilla de informe y el caso ficticio Botium Toys
 - `projects/linux-labs/` — ejercicios prácticos de administración y fortalecimiento de Linux
 - `projects/sql-queries/` — ejemplos de SQL defensivo con datos sintéticos
 - `projects/incident-response/` — registro de incidentes, bitácora de evidencia y plantilla de lecciones aprendidas

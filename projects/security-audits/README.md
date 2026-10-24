@@ -2,6 +2,10 @@
 
 Documenta revisiones de seguridad autorizadas con un alcance reproducible, hallazgos priorizados por riesgo y mitigaciones verificadas. Usa la [plantilla de informe de evaluación](TEMPLATE.md). Guarda los informes completos y sanitizados en `reports/`.
 
+## Proyectos
+
+- [Auditoría interna de Botium Toys](botium-toys/README.md): caso académico ficticio con evaluación de alcance, recomendaciones priorizadas y lista de controles y cumplimiento.
+
 ## Reglas de participación
 
 - Obtén autorización por escrito y define objetivos, fechas, métodos y exclusiones.
