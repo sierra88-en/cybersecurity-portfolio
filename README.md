@@ -10,9 +10,9 @@ Bienvenido/a. Este portafolio documenta proyectos prácticos de seguridad, ejerc
 
 Soy una persona enfocada en seguridad que desarrolla habilidades prácticas en fortalecimiento de sistemas, auditorías de seguridad, atención de incidentes y análisis de datos. Valoro la documentación clara, el mínimo privilegio, la reproducibilidad y convertir los hallazgos técnicos en acciones concretas para reducir riesgos.
 
-**Enfoque actual:** `[Agrega aquí tu enfoque de aprendizaje o carrera]`  
+**Enfoque actual:** Formacion en ciberseguridad `[Enfasis en Gestion de Riesgos y Cumplimiento]`  
 **Ubicación / zona horaria:** `[Ciudad, región]`  
-**Contacto:** `[Correo profesional]` · `[LinkedIn]` · `[Perfil de GitHub]`
+**Contacto:** `[sierrascompany2025@gmail.com]` · `[LinkedIn]` · `[@sierra88-en GitHub]`
 
 ## Habilidades principales
 
