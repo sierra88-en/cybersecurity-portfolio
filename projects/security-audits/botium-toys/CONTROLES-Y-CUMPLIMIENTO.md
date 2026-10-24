@@ -1,72 +1,67 @@
-# Lista de controles y cumplimiento: Botium Toys
+# Controles y revisión de cumplimiento: Botium Toys
 
-> **Caso didáctico ficticio.** Esta matriz es una reconstrucción a partir del escenario adjunto y de un ejemplo público elaborado por un estudiante; no es una plantilla oficial del curso.[1] La columna de estado no representa una verificación técnica independiente. «Pendiente según el caso» significa que la referencia didáctica indica que el control necesita implementarse; no constituye evidencia de que una organización real carezca de él.
+> **Fuente del estado:** PDF de evaluación aportado por el usuario. Los estados siguientes son lo que el documento reporta; no se verificaron mediante pruebas técnicas independientes. El informe adjunto evalúa 14 controles y marca uno como implementado. El detalle disponible no permite auditar por cuenta propia las evidencias, metodología o cálculos del informe.
 
-## Clave de estado y prioridad
+## Alcance descrito por el documento
 
-- **Estado:** «Indicado como existente» o «Indicado como pendiente» según la información didáctica disponible. «Por validar» cuando la hoja no permite establecer una conclusión.
-- **Prioridad:** evaluación inicial propuesta para el ejercicio. Alta = reducir primero riesgo material; Media = planificar después de controles de mayor exposición; Baja = mejora de apoyo. La prioridad real requiere validar impacto, probabilidad y controles compensatorios.
+El PDF incluye el comercio electrónico, terminales de punto de venta (POS), redes de oficinas y almacenes, y entornos de datos de tarjetas y datos personales que el documento afirma que procesa la organización. También afirma que se recopilan datos de salud y de menores. Esos tipos de datos y flujos no aparecen demostrados con evidencia adjunta; deben confirmarse antes de tratarlos como inventario validado o base de análisis regulatorio.
 
-## Controles administrativos
+## Matriz de 14 controles
 
-| Control | Tipo / propósito | Estado según el ejercicio | Prioridad | Recomendación / evidencia para validar |
-|---|---|---|---|---|
-| Mínimo privilegio | Preventivo; limita accesos de personal y proveedores a lo necesario para su función. | Pendiente | Alta | Definir roles, retirar privilegios innecesarios y revisar permisos. Muestrear cuentas y autorizaciones. |
-| Plan de recuperación ante desastres | Correctivo; restaura sistemas, datos, instalaciones y conectividad. | Pendiente | Alta | Definir RTO/RPO, dependencias, responsables y procedimientos; realizar ejercicio y prueba de restauración. |
-| Política de contraseñas y autenticación | Preventivo; establece requisitos de autenticación y controles frente a acceso indebido. | Pendiente | Alta | Alinear configuración con riesgos, habilitar MFA para accesos privilegiados/remotos cuando proceda y probar controles de bloqueo/recuperación. Evitar reglas que fomenten prácticas inseguras. |
-| Política de control de acceso | Preventivo; protege confidencialidad e integridad. | Pendiente | Alta | Documentar concesión, revisión, revocación, acceso remoto y emergencias; obtener aprobaciones y verificar registros. |
-| Gestión del ciclo de vida de cuentas | Preventivo; limita riesgos de cuentas obsoletas o indebidas. | Pendiente | Alta | Vincular altas, cambios y bajas a procesos de RR. HH.; verificar revocación oportuna y revisar cuentas inactivas. |
-| Separación de funciones | Preventivo; reduce fraude o abuso al evitar concentración incompatible de privilegios. | Pendiente | Alta | Identificar funciones incompatibles, revisar conflictos y establecer controles compensatorios documentados. |
+| # | Control | Dominio | Estado reportado en el PDF | Prioridad sugerida para validación / acción |
+|---:|---|---|---|---|
+| 1 | Mínimo privilegio (RBAC) | Organizativo / técnico | No implementado | Alta: revisar permisos en cuentas, carpetas, bases de datos y accesos de terceros; retirar privilegios excesivos. |
+| 2 | Recuperación ante desastres y continuidad | Organizativo | No implementado | Alta: definir objetivos de recuperación, responsables, dependencias y ejercicios; enlazar con respaldos probados. |
+| 3 | Política de contraseñas y autenticación | Organizativo / técnico | No implementado | Alta: revisar autenticación, MFA, recuperación y protección contra intentos abusivos de acuerdo con el riesgo y buenas prácticas vigentes. |
+| 4 | Separación de funciones | Organizativo | No implementado | Alta: identificar conflictos entre administración, TI y finanzas; definir aprobaciones y controles compensatorios. |
+| 5 | Firewall | Técnico | No implementado | Alta: confirmar la configuración y cobertura de perímetro, redes internas, tienda, POS, almacén y servicios publicados; diseñar reglas y segmentación. |
+| 6 | Sistema de detección de intrusiones (IDS) | Técnico | No implementado | Alta: establecer fuentes de telemetría, alertas, responsables, retención y respuesta; evaluar capacidades IDS/EDR/SIEM según arquitectura. |
+| 7 | Respaldos | Técnico / organizativo | No implementado | Alta: implantar copias programadas con acceso restringido y protección ante alteración; probar restauración y recuperación. |
+| 8 | Protección antimalware / EDR | Técnico | No implementado | Alta: validar cobertura gestionada de servidores, POS y estaciones; configurar actualizaciones, alertas y contención. |
+| 9 | Supervisión, mantenimiento e intervención manual de sistemas heredados | Técnico / organizativo | Sí implementado | Mantener evidencia del proceso y responsables; evaluar cobertura, registros, vulnerabilidades, soporte y límites de la intervención manual. |
+| 10 | Cifrado de datos | Técnico | No implementado | Alta: descubrir datos y flujos; definir cifrado en tránsito y reposo, gestión de claves y excepciones según requisitos aplicables. Validar mediante revisión técnica. |
+| 11 | Gestor corporativo de contraseñas/secretos | Técnico | No implementado | Alta: seleccionar solución controlada para credenciales privilegiadas, acceso, recuperación y auditoría; eliminar secretos expuestos. |
+| 12 | Cerraduras y acceso físico a oficinas, tienda y almacén | Físico | No implementado | Alta: validar áreas críticas, controles de llaves, bajas de acceso, visitantes y registros. |
+| 13 | Videovigilancia CCTV | Físico | No implementado | Media/alta: analizar cobertura y gestión de grabaciones; valorar privacidad, señalización, acceso y retención conforme a la ley aplicable. |
+| 14 | Detección y prevención de incendios | Físico | No implementado | Media/alta: inspeccionar sistemas, mantenimiento, alertas, evacuación y protección de infraestructura con responsables competentes. |
 
-## Controles técnicos
+**Nota de reconciliación:** una referencia pública secundaria consultada durante la elaboración inicial marcaba el firewall como implementado. El PDF que aportaste lo marca como no implementado. Esta matriz sigue el PDF del usuario y conserva la discrepancia en el informe principal; debe resolverse con evidencia de configuración antes de cerrar el hallazgo.
 
-| Control | Tipo / propósito | Estado según el ejercicio | Prioridad | Recomendación / evidencia para validar |
-|---|---|---|---|---|
-| Firewall | Preventivo; filtra tráfico de red no autorizado. | Indicado como existente | Mantener / validar | Revisar reglas, cambios, segmentación, exposición y registros; probar que las reglas corresponden al flujo autorizado. La existencia por sí sola no demuestra eficacia. |
-| Sistema de detección de intrusiones (IDS) | Detectivo; identifica actividad anómala o indicios de intrusión. | Pendiente | Alta | Evaluar fuentes, cobertura, alertas, responsables, retención y pruebas de detección. Considerar capacidades equivalentes integradas si satisfacen los objetivos. |
-| Cifrado | Preventivo; reduce exposición de datos sensibles durante transmisión y almacenamiento. | Pendiente | Alta | Inventariar datos y flujos, aplicar cifrado moderno en tránsito y en reposo según riesgo, proteger claves y verificar configuraciones y excepciones. |
-| Respaldos | Correctivo; permiten recuperar datos y servicios. | Pendiente | Alta | Definir alcance, frecuencia, retención y protección contra borrado o alteración; verificar restauración y controles de acceso a copias. |
-| Gestión de contraseñas / secretos | Preventivo; centraliza custodia, acceso y ciclo de vida de credenciales. | Pendiente | Alta | Usar una solución aprobada, limitar acceso, habilitar MFA, evitar secretos en código y rotar ante exposición. |
-| Protección antimalware / endpoint | Detectivo y correctivo; identifica y contiene amenazas conocidas. | Pendiente | Alta | Confirmar cobertura de endpoints y servidores, actualizaciones, políticas, alertas y respuesta; evaluar EDR si se justifica. |
-| Supervisión y mantenimiento de sistemas heredados | Preventivo/detectivo/correctivo; compensa riesgos de plataformas difíciles de actualizar. | Pendiente | Alta | Inventariar versiones y soporte; aislar, limitar accesos, monitorear, documentar intervención manual y planificar reemplazo. |
-| Registro, centralización y monitoreo | Detectivo; facilita investigar eventos y alertar a tiempo. | Por validar | Alta | Confirmar si hay SIEM u otra capacidad, cobertura de fuentes, sincronización de tiempo, retención, integridad, alertas y atención efectiva. |
+## Revisión de cumplimiento: qué puede concluirse y qué falta
 
-## Controles físicos
+### PCI DSS
 
-| Control | Tipo / propósito | Estado según el ejercicio | Prioridad | Recomendación / evidencia para validar |
-|---|---|---|---|---|
-| Caja fuerte con control de tiempo | Disuasivo; limita acceso físico a activos guardados. | Pendiente | Baja / media | Determinar si el riesgo y el tipo de activo justifican este control; validar custodia y acceso. |
-| Iluminación adecuada | Disuasivo; mejora visibilidad y reduce zonas ocultas. | Pendiente | Baja / media | Inspeccionar áreas de oficina, tienda, almacén y perímetro según riesgo. |
-| Videovigilancia CCTV | Preventivo/detectivo; apoya disuasión e investigación. | Pendiente | Media / alta | Evaluar cobertura, acceso a grabaciones, retención, señalización y obligaciones de privacidad; no instalar sin revisión legal aplicable. |
-| Gabinetes con llave para equipo de red | Preventivo; reduce manipulación física no autorizada. | Pendiente | Media / alta | Inspeccionar cuartos y racks; verificar llaves, control de acceso y registro de visitantes. |
-| Señalización del proveedor de alarma | Disuasivo; comunica presencia de un sistema de alarma. | Pendiente | Baja | Evaluar como medida complementaria; no sustituye detección ni respuesta real. |
-| Cerraduras | Preventivo; protege espacios y activos físicos. | Pendiente | Alta | Revisar puertas, ventanas, almacén, oficina, telecomunicaciones y administración de llaves; probar el proceso de baja de accesos. |
-| Detección y prevención de incendios | Detectivo/preventivo; reduce daño a personas, inventario e infraestructura. | Pendiente | Media | Validar equipos, mantenimiento, inspecciones, plan de evacuación y requisitos locales con responsables competentes. |
+El PDF sostiene que son aplicables los entornos e-commerce y POS y que el cumplimiento es deficiente. Que se acepten pagos con tarjeta hace pertinente evaluar PCI DSS, pero no basta por sí solo para declarar un incumplimiento confirmado ni para fijar una multa. Se necesita definir el entorno de datos de tarjetas (CDE), flujos de datos, sistemas conectados o que pueden afectar su seguridad, proveedores, segmentación y las obligaciones de validación con adquirente/marca de pago. PCI DSS establece requisitos técnicos y operativos para proteger datos de pago.[1]
 
-## Lista de cumplimiento y aplicabilidad
+### GDPR / RGPD
 
-| Marco / estándar | Evaluación para el escenario | Próximos pasos / límites |
-|---|---|---|
-| GDPR / RGPD | **Requiere análisis de aplicabilidad.** La actividad describe ventas a clientes de la UE. Debe confirmarse si la empresa ofrece bienes a personas en la UE o monitorea su comportamiento, qué datos personales procesa y si actúa como responsable o encargado. | Mapear datos y flujos, bases y propósitos de tratamiento, derechos, proveedores, transferencias, retención, seguridad y respuesta a brechas. El artículo 33 exige al responsable notificar a la autoridad sin demora indebida y, cuando sea factible, en un máximo de 72 horas desde que tenga conocimiento, salvo que sea improbable que exista riesgo para los derechos y libertades; el encargado notifica al responsable sin demora indebida. La notificación a las personas se rige por condiciones distintas del artículo 34. |
-| PCI DSS | **Relevante; alcance por determinar.** La actividad indica que la empresa acepta pagos en línea y en tienda. El alcance depende de si almacena, procesa o transmite datos de titulares/autenticación de tarjeta, o si sus sistemas pueden afectar al entorno de datos de tarjetas. | Documentar flujos, terminales, comercio electrónico, proveedor de pagos, segmentación y responsabilidades compartidas. Confirmar obligaciones de validación con adquirente/marca de pago. No afirmar conformidad por tener controles individuales. |
-| SOC 1 | **Condicional; no es una ley general.** Puede ser relevante si clientes o partes interesadas necesitan aseguramiento sobre controles de una organización de servicios pertinentes a la información financiera. | Determinar si Botium Toys brinda servicios que afectan el control financiero de clientes o si necesita evaluar informes de proveedores. Delimitar propósito y audiencia. |
-| SOC 2 | **Condicional; no es una certificación legal universal.** Puede apoyar la comunicación de controles de una organización de servicios frente a criterios de servicios de confianza. | Evaluar demanda de clientes, contratos y proveedores. Si se busca un examen, definir sistema, periodo, criterios, alcance y auditor independiente competente. No presentar un SOC report de proveedor como prueba automática de cumplimiento propio. |
+El PDF afirma que se procesan datos de la UE, incluso datos de salud y de menores, y concluye incumplimiento total. Esas categorías necesitan evidencia: inventario, propósito, base jurídica, origen, usuarios, retención, proveedores y ubicación. La aplicabilidad territorial también requiere analizar si se ofrecen bienes/servicios a personas en la UE o se monitorea su comportamiento, entre otros hechos relevantes. No es prudente declarar una conclusión jurídica cerrada a partir de una tabla sin esa documentación.
 
-## Resultado y seguimiento
+El artículo 33 exige, en los casos cubiertos, que el responsable notifique a la autoridad competente sin demora indebida y, cuando sea factible, dentro de 72 horas desde que tenga conocimiento, salvo que sea improbable que la brecha genere riesgo para los derechos y libertades. Si la notificación se retrasa, se explican los motivos; la información puede entregarse por fases. El encargado debe notificar al responsable sin demora indebida. El artículo 34 regula por separado la comunicación a las personas cuando se cumplan sus condiciones, incluida la probabilidad de alto riesgo.[2] Por eso no debe resumirse como una obligación automática de avisar a toda persona afectada siempre dentro de 72 horas.
 
-La hoja didáctica identifica brechas en controles administrativos y técnicos, y mejoras físicas; solo el firewall aparece como existente. Antes de cerrar un hallazgo en una organización real, solicitar evidencia apropiada: políticas aprobadas, inventarios, configuraciones, registros, tickets de acceso, resultados de recuperación, cobertura de endpoints, contratos, diagramas de flujo y registros de inspección.
+Las cifras de sanciones y la aplicación de la normativa española (LOPDGDD/AEPD) incluidas en el PDF no se trasladan a este portafolio como exposición confirmada de Botium Toys. La autoridad competente, la norma aplicable, la infracción y la sanción dependen de hechos y jurisdicción; una sanción no se puede calcular automáticamente a partir de la ausencia de un control.
 
-| ID | Acción | Prioridad sugerida | Responsable | Evidencia de cierre |
-|---|---|---|---|---|
-| BT-01 | Confirmar inventario de activos, propietarios, datos tratados y límites del CDE. | Alta | TI / Seguridad / Pagos | Inventario y diagramas aprobados |
-| BT-02 | Revisar privilegios, cuentas de proveedores y bajas de usuarios. | Alta | TI / RR. HH. | Muestreo de accesos y aprobaciones |
-| BT-03 | Implementar y probar respaldos y recuperación. | Alta | Operaciones TI | Informe de restauración y objetivos documentados |
-| BT-04 | Validar cifrado, gestión de claves y protección de datos. | Alta | Seguridad / Ingeniería | Revisión de configuración y excepciones aprobadas |
-| BT-05 | Asegurar monitoreo, alertas y respuesta de endpoints/red. | Alta | Operaciones de Seguridad | Prueba de alerta y evidencia de atención |
-| BT-06 | Formalizar plan de respuesta y continuidad; ejercitarlos. | Alta | Seguridad / Continuidad | Resultados de ejercicios y acciones correctivas |
-| BT-07 | Evaluar controles físicos y mantenimiento del sistema de incendios. | Media/alta | Instalaciones | Inspección, registros y cierre de brechas |
-| BT-08 | Completar evaluación de aplicabilidad GDPR y alcance PCI DSS. | Alta | Privacidad / Pagos / Legal | Análisis documentado y validación correspondiente |
+### SOC 1 y SOC 2
+
+El PDF califica cuatro criterios como no implementados y deriva un resultado de “0 de 4”. Esa cuenta no constituye por sí sola una auditoría SOC ni acredita que Botium Toys “falle el 100%” de una obligación universal. SOC es una familia de informes de atestación: su alcance depende del servicio, los criterios, el periodo y los usuarios previstos. SOC 1 se relaciona con controles pertinentes a la información financiera de entidades usuarias; SOC 2 se relaciona con criterios de servicios de confianza. La necesidad de un informe depende de contratos, clientes y modelo de servicios; no es una ley general que toda empresa deba certificar.[3]
+
+## Riesgos que sí conviene priorizar
+
+Según el estado reportado en el PDF, la combinación de acceso sin mínimo privilegio, ausencia de firewall reportada, falta de detección, cifrado y respaldos, controles débiles sobre endpoints y deficiencias físicas justificaría una validación prioritaria. Los impactos potenciales incluyen acceso indebido a datos, interrupción de ventas, pérdida de integridad de registros y recuperación lenta. Son escenarios de riesgo, no incidentes ocurridos ni pérdidas financieras medidas.
+
+El PDF aporta costos promedio de brechas, duración de incidentes, ahorros por cifrado y montos de multas. No se adoptan aquí como estimación de impacto para Botium Toys: el archivo no aporta un modelo cuantitativo específico, datos de exposición, supuestos, análisis de sensibilidad ni una fuente verificable que permita aplicarlos a esta empresa ficticia. Para cuantificar el riesgo se necesita metodología transparente, datos pertinentes y validación del dueño del riesgo.
+
+## Plan de validación y remediación
+
+1. **Resolver discrepancias y preservar evidencia:** confirmar el estado del firewall y las demás filas con diagramas, políticas, configuraciones, muestras de cuentas, registros y entrevistas autorizadas.
+2. **Establecer alcance de datos:** documentar e-commerce, POS, flujos de pagos, datos personales efectivamente tratados, proveedores, segmentación y responsabilidades.
+3. **Tratar primero controles de exposición alta:** acceso privilegiado, segmentación de red/firewall, autenticación y protección de credenciales, cifrado contextual, endpoint y monitoreo.
+4. **Asegurar recuperación:** respaldos protegidos y probados, plan de continuidad y recuperación, procedimientos de respuesta y simulacros.
+5. **Validar controles físicos y legado:** verificar cerraduras, visitantes, videovigilancia respetuosa de privacidad, prevención de incendios y compensaciones para sistemas heredados.
+6. **Cerrar hallazgos con evidencia:** asignar responsables, fechas, riesgo residual y pruebas de eficacia. La clasificación final debe basarse en impacto y probabilidad validados, no en el rótulo del documento por sí solo.
 
 ## Referencias
 
-[1]: https://github.com/ChrisJabb21/Botium-Toys-Internal-Security-Audit "Ejemplo público de auditoría Botium Toys de un estudiante"
+[1]: https://www.pcisecuritystandards.org/standards/pci-dss/ "PCI Security Standards Council, PCI DSS"
+[2]: https://eur-lex.europa.eu/eli/reg/2016/679/oj "Reglamento General de Protección de Datos, artículos 33 y 34"
+[3]: https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services "AICPA, System and Organization Controls suite"

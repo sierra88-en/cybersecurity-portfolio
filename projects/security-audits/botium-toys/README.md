@@ -1,86 +1,48 @@
-# Auditoría interna de seguridad: Botium Toys
+# Auditoría de controles y cumplimiento: Botium Toys
 
-> **Tipo de ejercicio:** Caso académico de una empresa ficticia  
-> **Estado:** Evaluación de escritorio basada en el escenario y las hojas de trabajo disponibles; no es una auditoría de una organización real  
-> **Alcance del portafolio:** Ejemplo público, sin datos reales ni evidencia técnica  
-> **Marco de referencia:** NIST Cybersecurity Framework (CSF) 2.0
+> **Tipo:** Caso de estudio académico sobre una empresa ficticia.
+> **Fuente base:** PDF de alcance, objetivos y evaluación de riesgos proporcionado por el usuario.
+> **Estado:** Análisis documental; no se ejecutaron pruebas técnicas independientes.
+> **Uso:** Ejemplo público de portafolio, no asesoría legal ni dictamen de cumplimiento.
 
-## Contexto y objetivo
+## Alcance y objetivos reportados
 
-Botium Toys es una empresa ficticia de Estados Unidos con una ubicación física que funciona como oficina, tienda y almacén. Sus ventas en línea crecieron dentro y fuera del país. El ejercicio plantea una auditoría interna para entender los riesgos para operaciones y activos, mejorar los controles y revisar requisitos relacionados con pagos y clientes de la Unión Europea.
+El documento adjunto define un alcance más detallado que el escenario breve: plataforma de comercio electrónico, terminales POS, red de oficinas y almacenes/distribución, y los entornos que —según ese documento— procesan, transmiten o almacenan datos de tarjetas, información personal y datos sensibles. Propone evaluar controles técnicos, organizativos y físicos, revisar PCI DSS, GDPR/RGPD y temas relacionados con SOC 1/SOC 2, y priorizar mitigaciones para la dirección de TI.[A]
 
-El caso proporciona un inventario de activos administrados por TI, pero no evidencia técnica que permita confirmar cómo están configurados o funcionando. Por ello, este trabajo distingue los datos expresos del escenario de los supuestos de la lista de control. Los controles marcados «por implementar» se tratan como brechas de la hoja didáctica, no como hallazgos confirmados mediante pruebas de una empresa real.
+El PDF además afirma que Botium Toys maneja información de salud y de menores y presenta justificaciones detalladas de fallas. Estos puntos son **afirmaciones de la fuente**, no hechos corroborados en el escenario inicial ni mediante evidencia independiente. La aplicabilidad y el inventario de datos deben verificarse con diagramas de flujo, sistemas, contratos y responsables reales antes de concluir nada.
 
-## Alcance y activos considerados
+## Resultado del checklist del PDF
 
-El inventario del caso incluye equipos locales y de empleados; aplicaciones y servicios de contabilidad, telecomunicaciones, bases de datos, seguridad, comercio electrónico e inventario; acceso a Internet y red interna; acceso de proveedores; servicios de centro de datos; almacenamiento y retención de datos; lectores de credenciales; y sistemas heredados que requieren supervisión manual.
+El documento proporcionado evalúa 14 controles y marca 13 como no implementados y uno como implementado: el mantenimiento, monitoreo e intervención manual de sistemas heredados. Entre los controles marcados como no implementados se encuentra el firewall. Esto contradice una referencia pública secundaria consultada antes, que lo describía como existente. Para este caso del portafolio prevalece el PDF que aportaste; la discrepancia queda documentada y el estado se presenta como **reportado por el documento**, no verificado técnicamente.
 
-La hoja de trabajo usada como referencia menciona también como sistemas bajo revisión contabilidad, detección en endpoints, firewalls, IDS y SIEM. Antes de una evaluación real, se debe confirmar si esos componentes existen, quién los opera, dónde están alojados y cuáles procesan datos de tarjetas o datos personales.
+Consulta la [matriz de controles y revisión de cumplimiento](CONTROLES-Y-CUMPLIMIENTO.md) para ver los 14 controles, la aplicabilidad que requiere confirmación, las acciones sugeridas y las cautelas sobre afirmaciones legales y económicas.
 
-**Fuera del alcance de este ejercicio:** pruebas activas, escaneo de sistemas reales, entrevistas con personal, revisión de configuraciones, muestreo de registros, validación de controles, análisis de contratos y determinación legal de cumplimiento. No se afirma que haya ocurrido una intrusión ni que se hayan impuesto o vayan a imponerse multas.
+## Evaluación y cautelas importantes
 
-## Objetivos de auditoría
+- **NIST CSF:** El CSF sirve para organizar resultados de ciberseguridad y gestión de riesgos; no es una certificación ni, por sí solo, un estándar legal de cumplimiento.[1]
+- **GDPR/RGPD:** Hay que confirmar los hechos de tratamiento y el ámbito territorial antes de concluir aplicabilidad. El artículo 33 dispone que, cuando corresponda, el responsable notifique a la autoridad sin demora indebida y, cuando sea factible, dentro de 72 horas desde que tenga conocimiento; hay excepciones y requisitos específicos. El encargado debe notificar al responsable sin demora indebida. La comunicación a las personas se analiza bajo el artículo 34, con condiciones propias.[2]
+- **PCI DSS:** La pertinencia parece razonable si hay pagos con tarjeta, pero el alcance debe determinarse con los flujos de datos, sistemas, proveedores, segmentación y obligaciones de la adquirente/marca. PCI DSS es un estándar de seguridad de datos de pago, no una multa legal única cuyo importe pueda inferirse sin conocer contrato, jurisdicción y programa de cumplimiento.[3]
+- **SOC 1/SOC 2:** Son informes de atestación, no leyes ni requisitos universales de que toda empresa mantenga controles para “aprobar” una auditoría SOC. Su uso depende del servicio, de las necesidades de clientes y de contratos; deben acotarse el sistema y criterios pertinentes.[4]
+- **Cifrado:** No se debe traducir una recomendación de cifrado como una obligación universal de usar un algoritmo o versión de protocolo específicos en todos los activos. La selección debe basarse en el tipo de dato, arquitectura, amenazas, requisitos aplicables y gestión de claves.
+- **Cifras de riesgo y sanciones:** El PDF contiene estimaciones de costo de brechas y multas. No las reproduzco como exposición financiera de Botium Toys: no se incluyen datos verificables de pérdidas, pólizas, ingresos, jurisdicción o cálculo para esta empresa ficticia. Una multa no es automática por una brecha; depende de hechos, obligaciones y proceso de la autoridad.
+- **Autoridad española:** La mención de la AEPD y de la ley española no demuestra que esa autoridad sea competente para un negocio estadounidense con clientes en la UE. La autoridad competente se determina con los hechos y reglas jurisdiccionales aplicables.
 
-1. Organizar la evaluación con el NIST CSF y mejorar la gestión del riesgo cibernético.
-2. Inventariar activos, datos, dependencias de terceros y sistemas heredados.
-3. Identificar brechas de controles administrativos, técnicos y físicos.
-4. Priorizar mitigaciones para proteger confidencialidad, integridad, disponibilidad y continuidad operativa.
-5. Determinar qué análisis adicional se requiere para PCI DSS y GDPR, de acuerdo con el flujo real de datos y el papel de la empresa.
+## Recomendaciones ejecutivas
 
-El NIST CSF 2.0 ofrece resultados de alto nivel para gestionar riesgo —Govern, Identify, Protect, Detect, Respond y Recover—; no es por sí mismo una certificación ni sustituye los requisitos legales o de PCI DSS.[1]
+1. **Validar el estado y el alcance:** confirmar el inventario de activos, el flujo de pagos, el alcance del entorno de datos de tarjetas, los datos personales realmente tratados, proveedores, localizaciones y evidencia que sustenta los estados “Sí/No”. Resolver la contradicción del firewall.
+2. **Reducir exposición crítica:** restringir y revisar accesos privilegiados, proteger credenciales, segmentar redes y proteger endpoints, POS y sistemas expuestos. Validar los controles mediante pruebas autorizadas.
+3. **Mejorar continuidad y detección:** diseñar respaldos protegidos con pruebas de restauración, recuperación ante desastres, registro centralizado, monitoreo y respuesta a alertas. No asumir que el mantenimiento manual del legado compensa la falta de controles automáticos.
+4. **Formalizar respuesta y privacidad:** crear un proceso de respuesta a incidentes que incluya clasificación, escalamiento, conservación de evidencia y análisis de notificación. Definir responsables y revisar obligaciones con asesoría competente.
+5. **Priorizar con evidencia:** convertir las brechas confirmadas en un registro con riesgo, propietario, fecha objetivo, dependencias, control compensatorio y evidencia de cierre. Tratar las prioridades del PDF como propuesta, no como resultado de un cálculo validado.
 
-## Hallazgos principales del ejercicio
+## Archivos
 
-La lista de controles disponible como referencia secundaria indica que el firewall ya está implementado. Esa publicación es un ejemplo público de un estudiante, no la hoja oficial del curso. En ella se identifican como pendientes controles de mínimo privilegio, separación de funciones, continuidad y recuperación ante desastres, políticas de contraseñas y accesos, gestión de cuentas, IDS, cifrado, respaldos, gestión de contraseñas, antivirus y supervisión de sistemas heredados. También señala controles físicos por mejorar, como CCTV, cerraduras, gabinetes con llave para equipo de red y detección/prevención de incendios.[5]
-
-La prioridad alta para las brechas de acceso, cifrado, respaldo y detección es razonable como prioridad inicial por su relación con cuentas, información sensible, pagos y continuidad. Sin embargo, la prioridad final debe surgir de evidencia, probabilidad, impacto, exposición, controles compensatorios y tolerancia al riesgo; no solo de la plantilla.
-
-## Recomendaciones prioritarias
-
-### Inmediatas: 0–30 días
-
-- Confirmar responsables, inventario y flujos de datos. Identificar dónde se reciben, procesan, transmiten o almacenan datos de pago y datos personales; validar si el proveedor de pagos reduce el alcance PCI DSS y qué responsabilidades permanecen en Botium Toys.
-- Revisar cuentas privilegiadas, cuentas de exempleados y accesos de proveedores. Retirar accesos innecesarios, aplicar mínimo privilegio y establecer revisiones periódicas con aprobación documentada.
-- Crear o validar un plan de respuesta a incidentes y un procedimiento para reportar, escalar y documentar incidentes de seguridad y privacidad.
-- Proteger datos sensibles con cifrado adecuado en tránsito y en reposo, gestión de claves y controles de acceso; confirmar mediante pruebas y revisión de arquitectura.
-- Confirmar que los respaldos existen, están aislados o protegidos contra alteración, y pueden restaurarse. Realizar una prueba documentada de restauración.
-
-### Corto plazo: 30–90 días
-
-- Formalizar gestión del ciclo de vida de cuentas, autenticación robusta, políticas de acceso y separación de funciones; implementar una bóveda o administrador de secretos/contraseñas aprobado cuando aplique.
-- Establecer registro centralizado y monitoreo de endpoints, red y servicios relevantes. Evaluar IDS/EDR/SIEM de acuerdo con el tamaño y capacidad del equipo, con alertas atendidas y un proceso de escalamiento.
-- Mantener protección antimalware, gestión de parches, configuración segura y un plan documentado de atención para sistemas heredados y fuera de soporte.
-- Aprobar un plan de continuidad y recuperación ante desastres con objetivos de recuperación, responsables, dependencias, copias de seguridad y ejercicios de prueba.
-- Evaluar controles físicos de acceso, protección de gabinetes y equipos, vigilancia y detección de incendios; documentar quién revisa alertas y cómo se conserva evidencia.
-
-### Continuo
-
-- Mantener un registro de riesgos, excepciones, responsables, fechas objetivo y evidencia de cierre.
-- Revisar contratos, accesos y controles de proveedores, incluyendo centros de datos y servicios de pago.
-- Repetir evaluaciones y pruebas de eficacia después de cambios relevantes y a intervalos definidos por el riesgo.
-
-## Cumplimiento y límites
-
-La aplicabilidad del GDPR depende del tratamiento y del contexto; el escenario dice que la empresa vende a clientes de la UE, por lo que debe analizarse si ofrece bienes a personas en la UE o monitorea su comportamiento y qué roles de responsable/encargado asume. No basta con la ubicación de la empresa para concluir el alcance legal. Si hay una brecha de datos personales notificable, el artículo 33 establece notificación a la autoridad competente sin demora indebida y, cuando sea factible, dentro de 72 horas desde que el responsable tenga conocimiento, salvo la excepción indicada por el artículo; el encargado debe notificar al responsable sin demora indebida.[2]
-
-PCI DSS se considera porque el escenario señala pagos en línea y en tienda. El alcance depende de si Botium Toys almacena, procesa o transmite datos de titulares de tarjeta o puede afectar la seguridad del entorno de datos de tarjetas. La marca de pago, adquirente y otros programas aplicables definen obligaciones de validación. Se requiere confirmar el flujo de pago, la segmentación, proveedores y el método de validación antes de afirmar cumplimiento.[3]
-
-SOC 1 y SOC 2 son informes de atestación que pueden ser relevantes para generar confianza o evaluar proveedores; no deben describirse como leyes o requisitos universales. SOC 1 se relaciona con controles pertinentes al control interno sobre información financiera, mientras SOC 2 aborda criterios de servicios de confianza pertinentes para seguridad, disponibilidad, integridad de procesamiento, confidencialidad o privacidad. La necesidad de obtenerlos depende de relaciones y necesidades contractuales del negocio.[4]
-
-## Conclusión
-
-El escenario describe una empresa en crecimiento que debe formalizar gobierno de seguridad, inventario, acceso, protección de datos, detección y recuperación. La lista de trabajo apunta a brechas importantes, pero sin pruebas no se puede afirmar que los controles estén ausentes ni declarar incumplimiento. La acción más valiosa es validar el estado real y el alcance de datos, y luego ejecutar mitigaciones priorizadas con responsables y pruebas de eficacia.
-
-## Archivos de este proyecto
-
-- [Lista de verificación de controles](CONTROLES-Y-CUMPLIMIENTO.md): controles administrativos, técnicos y físicos, estado y prioridad.
-
-El archivo de actividad aportado no incluye las hojas de trabajo enlazadas ni las cinco preguntas del curso. Por eso este entregable documenta el análisis del escenario y la lista de controles disponible públicamente, pero no responde el cuestionario ni afirma reproducir una hoja oficial completa.
+- [Matriz de controles y cumplimiento](CONTROLES-Y-CUMPLIMIENTO.md)
 
 ## Referencias
 
+[A]: Documento proporcionado por el usuario, *Botium Toys: Scope, Goals, and Risk Assessment Report* (PDF de 15 páginas, adjunto en esta conversación). Se usa como fuente de las afirmaciones atribuidas al caso; sus conclusiones no fueron verificadas de forma independiente.
 [1]: https://www.nist.gov/cyberframework "NIST Cybersecurity Framework 2.0"
-[2]: https://eur-lex.europa.eu/eli/reg/2016/679/oj "Reglamento General de Protección de Datos, artículo 33"
+[2]: https://eur-lex.europa.eu/eli/reg/2016/679/oj "Reglamento General de Protección de Datos, artículos 33 y 34"
 [3]: https://www.pcisecuritystandards.org/standards/pci-dss/ "PCI Security Standards Council, PCI DSS"
-[4]: https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services "AICPA, System and Organization Controls suite" 
-[5]: https://github.com/ChrisJabb21/Botium-Toys-Internal-Security-Audit "Ejemplo público de auditoría Botium Toys de un estudiante" 
+[4]: https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services "AICPA, System and Organization Controls suite"
