@@ -10,14 +10,15 @@ Bienvenido/a. Este portafolio documenta proyectos prácticos de seguridad, ejerc
 
 Soy una persona enfocada en seguridad que desarrolla habilidades prácticas en fortalecimiento de sistemas, auditorías de seguridad, atención de incidentes y análisis de datos. Valoro la documentación clara, el mínimo privilegio, la reproducibilidad y convertir los hallazgos técnicos en acciones concretas para reducir riesgos.
 
-**Enfoque actual:** Formacion en ciberseguridad `[Enfasis en Gestion de Riesgos y Cumplimiento]`  
-**Ubicación / zona horaria:** `[Ciudad, región]`  
-**Contacto:** `[sierrascompany2025@gmail.com]` · `[LinkedIn]` · `[@sierra88-en GitHub]`
+**Nombre:** Enrique Angel Sierra Ruiz
+**Enfoque actual:** Formación en Ciberseguridad (Énfasis en Gestión de Riesgos y Cumplimiento)
+**Ubicación / zona horaria:** Mérida, Yucatán, México (UTC−6)
+**Contacto:** [sierrascompany2025@gmail.com](mailto:sierrascompany2025@gmail.com) · LinkedIn: `enrique-angel-sierra-ruiz-84b33…` · [GitHub: sierra88-en](https://github.com/sierra88-en)
 
 ## Habilidades principales
 
-- **Sistemas operativos:** CLI de Linux, permisos y propiedad de archivos, usuarios y grupos, servicios, registros y fundamentos de shell
-- **Seguridad:** metodología de evaluación de vulnerabilidades, revisión de configuraciones seguras, priorización de riesgos, manejo de evidencia y validación de correcciones
+- **Sistemas operativos:** CLI de Linux (permisos y procesos), entornos Windows y scripting con Bash
+- **Seguridad:** metodologías de evaluación de vulnerabilidades, marcos de control (NIST / tríada CIA) y análisis de riesgos
 - **Respuesta a incidentes:** clasificación inicial, líneas de tiempo, planificación de contención, documentación y lecciones aprendidas
 - **Datos:** filtros y agregaciones SQL, manejo seguro de datos sintéticos y minimización de datos
 - **Flujo de trabajo de ingeniería:** Git, Markdown, control de cambios, laboratorios reproducibles y comunicación técnica clara
